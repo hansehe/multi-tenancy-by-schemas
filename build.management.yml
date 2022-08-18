@@ -1,0 +1,13 @@
+test:
+    selections:
+        docker:
+            directory: .
+            files:
+                - docker-compose.yml
+
+swarm:
+    selections:
+        services:
+            directory: ServiceDependencies
+            files:
+                - swarm-management.yml

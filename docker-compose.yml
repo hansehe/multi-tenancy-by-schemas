@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+    multi-tenant-migration:
+        image: multi-tenant-migration
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks:
+            - backend_network
+
+networks:
+    backend_network:
+        external: true
